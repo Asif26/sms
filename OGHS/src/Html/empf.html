@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/EmployeForm.css">
+    <title>Employee Registration Form</title>
+    <script  type="module" defer src="/src/js/EmployeForm.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="employee-form">
+            <h1>EMPLOYEE REGISTRATION FORM</h1>
+
+            <div class="section">
+                <h2>Personal Information</h2>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required><br>
+
+                <label for="father-name">Father Name:</label>
+                <input type="text" id="father-name" name="father-name" required><br>
+
+                <label for="cnic">CNIC:</label>
+                <input type="text" id="cnic" name="cnic" required><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br>
+
+                <label for="phone-number-one">Phone Number:</label>
+                <input type="text" id="phone-number-one" name="phone-number-one" required><br>
+
+                <label for="phone-number-two">Phone Number (Optional):</label>
+                <input type="text" id="phone-number-two" name="phone-number-two"><br>
+
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required> Male
+                <input type="radio" id="female" name="gender" value="female" required> Female<br>
+
+                <label for="blood-group">Blood Group:</label>
+                <select id="blood-group" name="blood-group" required>
+                    <option value="" disabled selected>Select your blood group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select><br>
+            </div>
+
+            <div class="section">
+                <h2>Credentials & Experience</h2>
+                <label for="education">Education:</label>
+                <select id="education" name="education" required>
+                    <option value="" disabled selected>Select your education</option>
+                    <option value="Matric">Matric</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="Masters">Masters</option>
+                    <option value="MPhil">MPhil</option>
+                    <option value="PhD">PhD</option>
+                </select><br>
+
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" required><br>
+            </div>
+
+            <button type="submit">JOIN OUR TEAM!</button>
+        </form>
+    </div>
+</body>
+</html>

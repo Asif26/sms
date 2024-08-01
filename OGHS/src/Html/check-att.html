@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Check Attendance</title>
+    <link rel="stylesheet" href="/src/css/attandance.css">
+</head>
+<body>
+    <form id="checkForm" class="container">
+        <h2>Check Attendance</h2>
+        <label for="Date">Date:</label>
+        <input type="date" name="Date" id="Date" required><br><br>
+        <label for="type">Type:</label>
+        <select id="type" name="type" required>
+            <option value="Student">Student</option>
+            <option value="Employee">Employee</option>
+        </select><br><br>
+        <label for="text">ID:</label>
+        <input type="text" id="text" placeholder="Enter ID" required><br><br>
+        <input type="submit" value="Check" id="check"><br><br>
+    </form>
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Attendance Results</h3>
+            <p><strong>User ID:</strong> <span id="modalUserId"></span></p>
+            <p><strong>Status:</strong> <span id="modalStatus"></span></p>
+            <p><strong>Checkin:</strong> <span id="modalCheckin"></span></p>
+            <p><strong>Checkout:</strong> <span id="modalCheckout"></span></p>
+        </div>
+    </div>
+    <script type="module" src="/src/js/check.js"></script>
+</body>
+</html>

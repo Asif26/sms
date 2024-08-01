@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admissionForm.css">
+    <title>Admission form</title>
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+    <form id="admissionForm" onsubmit="return validateForm()">
+      <h2>Admission Form</h2>
+      <label for="grno">General Register Number :</label>
+      <input type="number" id="grno" name="grno" > <br><br>
+
+      <label for="section">Section :</label>
+      <select name="section" id="section">
+        <option value="select_section" selected disabled>Select Section</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+      </select>
+      <br><br>
+      <label for="section">Student ID :</label>
+      <input type="number" id="StuId">
+
+      <label for="class">Class :</label>
+      <select name="class" id="class">
+        <option value="select_class" selected disabled>Select Class</option>
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+        <option value="four">Four</option>
+        <option value="five">Five</option>
+        <option value="six">Six</option>
+        <option value="Seven">Seven</option>
+        <option value="eight">Eight</option>
+        <option value="Nine">Nine</option>
+        <option value="ten">Ten</option>
+      </select>
+      <br><br>
+
+      <label for="name">Name :</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="father">Father Name :</label>
+      <input type="text" id="father" name="father"><br><br>
+
+      <label for="surname">Surname :</label>
+      <input type="text" id="surname" name="surname"><br><br>
+
+      <label for="gender">Gender :</label>
+      <input type="radio" id="gender" name="gender" value="male"> Male
+      <input type="radio" id="gender" name="gender" value="female"> Female
+       <br><br>
+
+      <label for="pob">Place of birth :</label>
+      <input type="text" id="pob" name="pob"><br><br>
+
+      <label for="dob">Date of birth :</label>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label for="doa">Date of admission :</label>
+      <input type="date" id="doa" name="doa"><br><br>
+
+      <label for="class-admitted">In which class admitted :</label>
+      <input type="text" id="class-admitted" name="class-admitted"><br><br>
+
+      <label for="last-school">Last school attended :</label>
+      <input type="text" id="last-school" name="last-school"><br><br>
+
+      <label for="contact">Contact No :</label>
+      <input type="tel" id="contact" name="contact"><br><br>
+      <label for="contact">Email :</label>
+      <input type="email" id="email" name="contact"><br><br>
+      <label for="Password">Password :</label>
+      <input type="password" id="pass" name="contact"><br><br>
+
+      <label for="address">Address:</label><br>
+      <textarea name="address" id="address" rows="4" cols="50"> </textarea> <br><br>
+
+      <button type="submit" name="register"> Register </button>
+    </form></div>
+    <script type = "module" src = "./form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Row styles */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Card container */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align items in the card equally */
+    transition: transform 0.3s ease;
+}
+
+/* Title styles */
+.card h3 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+.card p {
+    color: #666666;
+    line-height: 1.5;
+}
+
+/* Button styles */
+.card-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 8px 16px;
+    margin-top: auto; /* Push the button to the bottom of the card */
+    margin-bottom: 10px; /* Add some space at the bottom */
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Specific styles for each card */
+.card.create-exam {
+    border-top: 4px solid #007bff; /* Blue border on top */
+}
+
+.card.results {
+    border-top: 4px solid #28a745; /* Green border on top */
+}
+
+.card.check-attendance {
+    border-top: 4px solid #ffc107; /* Yellow border on top */
+}
+
+.card.teachers {
+    border-top: 4px solid #dc3545; /* Red border on top */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
