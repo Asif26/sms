@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Student List</title>
-    <link rel="stylesheet" href="/src/css/styles.css">
-    <script type="module" src="/src/js/stuD.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="module" src="../js/stuD.js"></script>
 </head>
 <body>
     <!-- <div class="container">
@@ -25,13 +25,14 @@
                     <button class="add-student-btn">+ Add a student</button>
                 </div>
             </header>
-            <div class="content">
-                <div class="filter-section">
-                    <!-- <select class="select-school"> -->
-                        <!-- <option value="big-ben">Big Ben</option> -->
-                        <!-- Add more options here -->
-                    <!-- </select> -->
+            <div class="custom-dropdown">
+                <button class="dropdown-btn">Select a class</button>
+                <div class="dropdown-content">
+                    <!-- Options will be added dynamically -->
                 </div>
+            </div>
+            
+            
                 <table class="student-table admissionsTable">
                     <thead>
                         <tr>
